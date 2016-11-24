@@ -6,31 +6,31 @@
 int main(){
 
 	int size;
-	int** matrice;
+	int** matrix;
 
 	puts("");
 	puts("[-]Calcul of determinant :");
-	printf("Enter the size of the matrice: ");
+	printf("Enter the size of the matrix: ");
 	scanf("%5d",&size);
 	
-	matrice=malloc_mat(size,size);
+	matrix=malloc_mat(size,size);
 
 	for(int i=0;i<size;i++){
 		for(int j=0;j<size;j++){
 			printf("a(%d,%d)=",i+1,j+1);
-			scanf("%5d",&matrice[i][j]);
+			scanf("%5d",&matrix[i][j]);
 		}
 	}
 	
 	puts("");
-	print_mat(matrice,size);
+	print_mat(matrix,size);
 	puts("");
 
 	puts("    (It can take a while)");
 	puts("");
-    printf("\tA=%d\n\n",det(matrice,size));
+    printf("\tA=%d\n\n",det(matrix,size));
 
-	for(int i;i<size;i++)free(matrice[i]);
-	free(matrice);
+	for(int i;i<size;i++)free(matrix[i]);
+	free(matrix);
 	return 0;
 }
