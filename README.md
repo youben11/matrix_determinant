@@ -1,2 +1,2 @@
 # matrix_determinant
-A program to calculate déterminant of matrix 
+A program to calculate determinant of matrix 
