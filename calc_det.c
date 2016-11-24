@@ -9,7 +9,7 @@ int main(){
 	int** matrice;
 
 	puts("");
-	puts("[-]Calcul of determinent :");
+	puts("[-]Calcul of determinant :");
 	printf("Enter the size of the matrice: ");
 	scanf("%5d",&size);
 	
